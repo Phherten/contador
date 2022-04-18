@@ -10,3 +10,19 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body{
+    background-color: black;
+}
+.contadorGrande{
+    margin: 20px;
+    border:solid 1px #43C81F;
+    height: 300px;
+    
+}
+.numero{
+    
+    font-family: 'Roboto', sans-serif;
+    color: #43C81F;
+    font-size: 200px;
+}
+
