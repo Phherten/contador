@@ -46,8 +46,14 @@ let cuenta = setInterval(function contador() {
 					? numeroArray[numeroArray.length - 5]
 					: "0"
 			}
+			seis={
+				numeroArray[numeroArray.length - 6]
+					? numeroArray[numeroArray.length - 6]
+					: "0"
+			}
 			restart={restart}
 			parar={parar}
+			iniciar={contador}
 		/>,
 		document.querySelector("#app")
 	);

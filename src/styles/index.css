@@ -11,12 +11,14 @@
 
 */
 body{
-    background-color: black;
+    background-color:#CCCCCC
 }
 .contadorGrande{
     margin: 20px;
     border:solid 1px #43C81F;
-    height: 300px;
+    height: 350px;
+    border-radius: 5px;
+    background-color: black;
     
 }
 .numero{
@@ -24,5 +26,7 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #43C81F;
     font-size: 200px;
+    background-color: #1E1F1C;
+    border-radius:5px;
 }
 
