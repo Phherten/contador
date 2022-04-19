@@ -18,6 +18,9 @@ let cuenta = setInterval(function contador() {
 		numero = 0;
 		contador();
 	}
+	function parar() {
+		clearInterval(cuenta);
+	}
 
 	numero++;
 	ReactDOM.render(
@@ -41,9 +44,10 @@ let cuenta = setInterval(function contador() {
 			cinco={
 				numeroArray[numeroArray.length - 5]
 					? numeroArray[numeroArray.length - 5]
-					: 0
+					: "0"
 			}
 			restart={restart}
+			parar={parar}
 		/>,
 		document.querySelector("#app")
 	);

@@ -23,6 +23,20 @@ const Home = (props) => {
 					id="boton">
 					Reiniciar
 				</button>
+				<button
+					onClick={props.parar}
+					type="button"
+					className="btn btn-danger"
+					id="boton">
+					Parar
+				</button>
+				<button
+					onClick={props.iniciar}
+					type="button"
+					className="btn btn-primary"
+					id="boton">
+					Resumen
+				</button>
 			</div>
 		</div>
 	);
