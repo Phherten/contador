@@ -13,6 +13,9 @@ let numero = 0;
 window.onload = setInterval(function contador() {
 	let numeroString = numero.toString();
 	let numeroArray = numeroString.split("");
+	function restart() {
+		numero = 0;
+	}
 
 	numero++;
 	ReactDOM.render(
@@ -38,6 +41,7 @@ window.onload = setInterval(function contador() {
 					? numeroArray[numeroArray.length - 5]
 					: 0
 			}
+			restart={restart}
 		/>,
 		document.querySelector("#app")
 	);

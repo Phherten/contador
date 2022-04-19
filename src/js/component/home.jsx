@@ -16,7 +16,11 @@ const Home = (props) => {
 				<div className="numero m-3">{props.uno}</div>
 			</div>
 			<div className="boton d-flex justify-content-center">
-				<button type="button" className="btn btn-secondary" id="boton">
+				<button
+					onClick={props.restart}
+					type="button"
+					className="btn btn-secondary"
+					id="boton">
 					Reiniciar
 				</button>
 			</div>
