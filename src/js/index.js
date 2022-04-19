@@ -10,11 +10,13 @@ import Home from "./component/home.jsx";
 
 //render your react application
 let numero = 0;
-window.onload = setInterval(function contador() {
+window.onload = cuenta;
+let cuenta = setInterval(function contador() {
 	let numeroString = numero.toString();
 	let numeroArray = numeroString.split("");
 	function restart() {
 		numero = 0;
+		contador();
 	}
 
 	numero++;
