@@ -10,19 +10,19 @@ import Home from "./component/home.jsx";
 
 //render your react application
 let numero = 0;
+let isPaused = false;
+function restart() {
+	numero = 0;
+}
+function parar() {
+	isPaused = true;
+}
+function resume() {
+	isPaused = false;
+}
 window.onload = cuenta;
 let cuenta = setInterval(function contador() {
-	let numeroString = numero.toString();
-	let numeroArray = numeroString.split("");
-	function restart() {
-		numero = 0;
-		contador();
-	}
-	function parar() {
-		clearInterval(cuenta);
-	}
-
-	numero++;
+	let numeroArray = numero.toString();
 	ReactDOM.render(
 		<Home
 			uno={numeroArray[numeroArray.length - 1]}
@@ -53,8 +53,11 @@ let cuenta = setInterval(function contador() {
 			}
 			restart={restart}
 			parar={parar}
-			iniciar={contador}
+			iniciar={resume}
 		/>,
 		document.querySelector("#app")
 	);
+	if (isPaused == false) {
+		numero++;
+	}
 }, 1000);
