@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
 /* 
 
     You can write your own styles here...
@@ -22,11 +22,21 @@ body{
     
 }
 .numero{
-    
-    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
     color: #43C81F;
     font-size: 200px;
     background-color: #1E1F1C;
     border-radius:5px;
+    width: 120px;
+}
+#fondoIcono{
+    text-align: center;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    color: #43C81F;
+    font-size: 200px;
+    background-color: #1E1F1C;
+    border-radius:5px;
+    width: 400px;
 }
 

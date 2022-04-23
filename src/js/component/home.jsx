@@ -6,7 +6,7 @@ const Home = (props) => {
 	return (
 		<div className="container">
 			<div className="contadorGrande d-flex align-items-center">
-				<div className="numero ms-4 me-auto pe-2 ps-2">
+				<div className="numero ms-4 me-auto pe-2 ps-2" id="fondoIcono">
 					<i className="far fa-clock fa-x3"></i>
 				</div>
 				<div className="numero m-2">{props.seis}</div>
